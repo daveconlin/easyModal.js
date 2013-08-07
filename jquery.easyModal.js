@@ -29,8 +29,8 @@
 
 				var o = options;
 
-				var $overlay = $('<div class="lean-overlay"></div>');
-
+				var $overlay = ($(".lean-overlay").length>0)? $(".lean-overlay") : $('<div class="lean-overlay"></div>') ;
+				
 				$overlay.css({
 					'display': 'none',
 					'position': 'fixed',
